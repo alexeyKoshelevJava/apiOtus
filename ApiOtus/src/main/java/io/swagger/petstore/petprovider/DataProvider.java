@@ -10,7 +10,7 @@ import java.util.List;
 
 public class DataProvider {
 
-  public Pet createPet(){
+  public Pet createPet() {
     Category category = Category.builder()
         .mId(0L)
         .mName("something")
@@ -27,7 +27,7 @@ public class DataProvider {
        .mStatus("available")
        .build();
   }
-  public User createUser(){
+  public User createUser() {
     return User.builder()
         .id(7L)
         .username("worker")

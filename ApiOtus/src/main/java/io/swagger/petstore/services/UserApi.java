@@ -6,7 +6,9 @@ import io.swagger.petstore.dto.response.User;
 import io.swagger.petstore.petprovider.DataProvider;
 import io.swagger.petstore.specification.Specification;
 import org.testng.Assert;
+
 import java.util.List;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -30,7 +32,7 @@ public class UserApi {
 
   @Step("Обновить значение User")
   public void setUser(User user, String userName) {
-     given()
+    given()
         .spec(specification.requestSpec())
         .body(user)
         .when()
